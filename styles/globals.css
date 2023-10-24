@@ -1,0 +1,333 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Rubik+80s+Fade&display=swap');
+html{
+  /* background-color:rgb(0, 0, 0,0.5); */
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0) );
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+}
+body{
+
+  overflow-x:hidden;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.784), rgb(0, 0, 0),rgb(255, 255, 255),rgb(255, 255, 255) ); */
+  background-color: #15181b;
+}
+
+.rocket{
+  background: radial-gradient(at 65% 800px,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.591),#15181b61,#15181b,  #374e6556),url("../public/assets/rocket.avif");
+  background-size: cover;
+margin: .5rem;
+}
+
+.astronaut{
+  background: radial-gradient(circle , rgba(0, 0, 0, 0.772) 0%, #1e143b6f, rgb(24, 13, 35) 100%, rgb(0, 0, 0) 100%, rgb(11, 0, 0) 100%),url("../public/assets/wierdCircle.png");
+  background-size: contain;
+  
+  background-repeat: no-repeat;
+  
+}
+
+.morph{
+  background: rgba(21, 20, 20, 0.703);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border: 1px solid rgba(255, 255, 255, 0.388);
+  border-radius: 15px;
+clip-path: polygon(15% 10, 80% 0%, 100% 0, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
+}
+
+#about{
+    /* background-image: url, linear-gradient(#000000, #00000000);  */
+    /* background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.997), rgba(0, 0, 0, 0.415), rgba(0, 0, 0, 1)); */
+    
+    /* url("../public/assets/space.jpeg"); */
+    background: radial-gradient(at 65% 400px,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),#15181b,#15181b,  #15181b),url("../public/assets/space.jpeg");
+   
+    background-size: cover;
+
+    /* background-repeat: no-repeat; */
+}
+
+.PT{
+  font-family: 'PT Serif', serif;
+}
+
+.clip-your-needful-style {
+
+  clip-path: polygon(100% 0%, 100% 87%, 86% 100%, 0 100%, 0 13%, 11% 0);
+
+}
+
+#border-erase{
+border:none;
+}
+  #title-overlay{
+    background:linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  }
+#spaceman-two{
+  transform: scaleX(-1);
+  background-color: #15181b;
+  /* background: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 0),rgba(0, 0, 0, 0.57),rgba(15, 2, 32, 0.686),rgba(38, 5, 67, 0.863),rgba(0, 0, 0, 0.925),rgba(0, 0, 0, 0.98),rgb(0, 0, 0)),url("../public/assets/rocket.avif"); */
+  background-size: cover;
+  z-index: -1;
+  /* background-repeat: no-repeat; */
+}
+#spaceman-three{
+  background-color: #15181b;
+  /* background:linear-gradient(to bottom,rgb(0, 0, 0),rgba(0, 0, 0, 0.679),rgba(254, 254, 254, 0.598),rgba(254, 254, 254, 0.756)), url("../public/assets/sky-earth-space-working.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* margin-left: -3em; */
+  
+}
+#flip-image{
+  transform: scaleX(-1);
+}
+#skills{
+  /* margin-left:50vw; */
+
+}
+
+#space-foot{
+  background-color: #15181b;
+}
+@media screen and (max-width: 1024px) {
+  #skills{
+    /* margin-top:-100rem; */
+    /* margin-left:0vw;
+    width:100vw; */
+
+    /* margin-bottom: 54rem; */
+    /* width:100vw; */
+
+  }
+}
+@media screen and (max-width: 1024px) {
+  #tech-logos{
+
+width:4em;
+height:4em;
+
+  }
+}
+@media screen and (max-width: 500px) {
+  #tech-logos{
+    /* margin-top:-100rem; */
+width:3em;
+height:3em;
+
+  }
+}
+@media screen and (min-width: 1644px) {
+  #skill-list{
+
+font-size: larger;
+  
+  }
+}
+@media screen and (max-width: 1358px) {
+  #skill-list{
+
+font-size: small;
+  
+  }
+}
+@media screen and (max-width: 1023px) {
+  #skills-about{
+    /* font-size: .72em; */
+  margin-top:10vh;
+  margin-right: -90vw;
+
+  /* position:static */
+  /* width:1250px; */
+/* padding-left: 5vw;
+padding-right: 5vw;
+padding-bottom: 15vh; */
+
+   /* background: linear-gradient(to bottom,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.853));
+margin-top: 20vh;
+
+     transform: translateY(600px) */
+  }
+}
+@media screen and (max-width: 1024px) {
+  #skills-about{
+
+/* left:-800px */
+  
+  }
+}
+@media screen and (max-width: 767px) {
+  #skills-about{
+
+    margin-top:10vh;
+    margin-right: -10vw;
+  
+  }
+}
+@media screen and (max-width: 639px) {
+  #skills-about{
+
+    margin-top:10vh;
+    margin-right: -50vw;
+  
+  }
+}
+
+.burst{
+/* margin-left: 250px; */
+width:13em;
+margin-right: 15.5em;
+display: inline-block;
+margin-top: -130px;
+  /* background: rgb(255,255,255);
+background: linear-gradient(to bottom,#15181b00, #8a949e ); */
+}
+@media screen and (max-width: 1024px) {
+  .burst{
+
+    margin-right: 0em;
+  }
+}
+#works{
+  background-color: #15181b;
+}
+/* #space-fade{
+  background: rgb(1,0,0);
+background: linear-gradient(532deg, rgba(1,0,0,1) 1%, rgba(1,0,0,0.22592787114845936) 45%, rgba(1,0,0,0) 100%);
+  margin-top:-230px;
+  height:20vh;
+  width:50vw;
+  float:right;
+position: relative;
+} */
+#below-about-me{
+  /* margin-top:-300vh;
+  position: absolute; */
+}
+/* .parent {
+  overflow-y: scroll;
+  height: 100vh;
+
+  scroll-snap-type: y mandatory;
+}
+.section {
+ 
+  scroll-snap-align: start;
+  position: relative;
+} */
+.nav-fade{
+  background: linear-gradient(to bottom,rgb(19, 19, 19),rgba(23, 23, 23, 0.811),rgba(0, 0, 0, 0));
+}
+.nameTitle{
+  /* opacity: 0; */
+  /* -webkit-text-stroke-width: .5px; */
+    /* -webkit-text-stroke-color: #ffffff; */
+    /* -webkit-text-fill-color: #39719600; */
+/* text-shadow:
+      -1px -1px 0 #ffffff,
+      1px -1px 0 #ffffff,
+      -1px 1px 0 #ffffff,
+      1px 1px 0 #ffffff;
+   */
+}
+#to-top{
+  margin-top: -50vh;
+ /* opacity: .5; */
+ /* z-index: -2; */
+}
+@media screen and (max-width: 739px) {
+  h1{
+font-size: 3em !important;
+margin: 0 auto;
+  }
+  p{
+    padding-top: 1em;
+    /* text-align: center; */
+    font-size: 1.25em;
+  }
+  h6{
+    margin: 0 auto;
+    font-size: 1em !important;
+  }
+  .spaceman-one-jump{
+    padding-top:62vh;
+
+    margin-top: -74vh;
+    padding-right:38vw;
+    transform: scale(2.75);
+   
+   }
+}
+@media screen and (max-width: 768px) {
+  .resize{
+margin-left:2em;
+margin-right:2em;
+
+
+  }
+ 
+  h1{
+font-size: 3em;
+/* padding-top: 2em; */
+  }
+  h6{
+    font-size:1em;
+  }
+ 
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+*{
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+@media screen and (max-width: 700px) {
+  #techs{
+    /* margin-top: -20vh; */
+  }
+}
+#feature-2{
+background-image: url("/public/assets/sky-earth-space-working.jpg");
+
+}
+@media screen and (max-width: 424px) {
+  #skills-two{
+    /* margin-left: 4vw; */
+    /* margin-right: 4vw; */
+
+
+  }
+}#title-name{
+color: rgba(255, 119, 0, 0.833);
+}
+#between{
+  justify-content: space-between;
+  /* width: fit-content; */
+}
+#paint-size{
+  background-size: contain;
+
+}
+.image-container {
+
+  width: 100%;
+
+  > div {
+    position: unset !important;
+  }
+
+  .image {
+    object-fit: contain;
+    width: 65% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}

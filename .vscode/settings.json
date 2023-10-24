@@ -1,0 +1,12 @@
+{
+    /*here are your existing settings*/
+    /*THE CODE BELOW*/
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "vue-html": "html",
+        "razor": "html",
+        "plaintext": "jade"
+    }
+     /*^^^^THE CODE ABOVE^^^^*/
+}
