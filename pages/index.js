@@ -21,7 +21,7 @@ import Consult from './Consult';
 
 const inter = Inter({ subsets: ['latin'] })
 
-// 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 access token
+
 
 export default function Home() {
  
