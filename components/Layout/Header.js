@@ -8,7 +8,8 @@ import Logo from "../../public/assets/Logo.svg";
 import useWindowSize from "@rooks/use-window-size"
 import { debounce } from '../../utils/helpers';
 import { useRouter } from 'next/router';
-import login from "../../pages/login";
+import Login from "../../pages/login";
+import NextAuth from "next-auth/next";
 
 const Header = () => {
   const { innerHeight } = useWindowSize();
@@ -35,12 +36,12 @@ const Header = () => {
     const router = useRouter()
   
     const handleScroll = debounce(() => {
-      const currentScrollPos = window.pageYOffset;
+      const currentScrollPos = window.scrollY;
   
       setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 0) || currentScrollPos < 0);
   
       setPrevScrollPos(currentScrollPos);
-    }, 100);
+    }, 10);
   
     useEffect(() => {
       window.addEventListener('scroll', handleScroll);
@@ -154,7 +155,7 @@ const Header = () => {
                 (activeLink === "about"
                   ? " text-orange-500 animation-active "
                   : " text-black-500 hover:text-orange-500 ")
-              } href="../">
+              } href="../#about">
              Home</a>
 
               <a    className={
@@ -229,8 +230,8 @@ const Header = () => {
              
             </p>
     
-            <div  className="absolute mt-8" onClick={()=>login()}> <ButtonOutline>Sign Up</ButtonOutline></div>
-           
+            <div  className="absolute mt-8" > <ButtonOutline>Sign Up</ButtonOutline></div>
+            <Login/>
           </div>
         </nav>
       </header>

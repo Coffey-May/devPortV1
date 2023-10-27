@@ -23,19 +23,19 @@ const About = () => {
   return (
     <>
       <div
-        className="astronaut h-screen mb-96 px-6 sm:px-0 xs:px-0 md:px-0 lg:px-36  z-1 -mt-2"
-
+        className=" astronaut h-screen mb-96 px-6 sm:px-0 xs:px-0 md:px-0 lg:px-36  z-1 -mt-2"
+        id="spaceman-three"
         // id="spaceman-three"
       >
         <Parallax
-          speed={0}
+          speed={10}
           // className="pb-36"
           opacity={innerWidth < 1025 ? null : [0, 1]}
           scale={innerWidth < 1025 ? null : [-0.15, 1]}
         ></Parallax>
 
         <Parallax
-          speed={0}
+          speed={10}
           opacity={innerWidth < 1025 ? null : [-1, 1]}
           scale={innerWidth < 1025 ? null : [0, 1]}
         >
@@ -43,8 +43,8 @@ const About = () => {
             <div className="flex flex-row flex-wrap ">
               <div className="w-full lg:w-1/2  min-h-full bg-blue-200">
               <motion.div
-              id="skills-two"
-              className=" text-shadow shadow-black mt-20 absolute md:pt-12  md:mx-0 sm:px-2 flex flex-col  justify-center  w-12/12 lg:w-12/12"
+           
+              className=" text-shadow shadow-black mt-52 absolute md:pt-12  md:mx-0 sm:px-2 flex flex-col  justify-center  w-12/12 lg:w-12/12"
               variants={scrollAnimation2}
             >
               <h2 className=" text-white text-4xl lg:text-6xl font-medium ">
@@ -58,14 +58,17 @@ const About = () => {
                 principles.
               </h3>
               <motion.div
-                  className={"image-container"}
+                  // className={"image-container"}
                   variants={scrollAnimation}
                 >
                   <Image
                     src="/assets/react-lighthouse-perfect.webp"
                     alt="VPN Illustrasi"
                     quality={100}
-                    layout="fill"
+                    width={500}
+                    height={500}
+                    // layout="fill"
+                    // className="object-fill"
                     className={"image"}
                   />
                 </motion.div>
@@ -89,7 +92,7 @@ const About = () => {
                 principles.
               </h3> */}
               <motion.div
-                  className="image-container ml-20 mt-36 "
+                  className="image-container ml-8 mt-36 "
                   // variants={scrollAnimation5}
                 >
                   <Image
@@ -99,6 +102,7 @@ const About = () => {
                     height={500}
                     quality={100}
                     // layout="fill"
+                    // className="object-cover"
                     // className={"image"}
                   />
                 </motion.div>

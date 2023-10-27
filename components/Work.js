@@ -12,6 +12,8 @@ import { Parallax } from "react-scroll-parallax";
 import useWindowSize from "@rooks/use-window-size";
 import { Tab } from '@headlessui/react'
 import Art from "./Art";
+import WebProjects from "./webProjects/WebProjects";
+import DesignProjects from "./DesignProjects";
 
 const Work = () => {
 
@@ -47,18 +49,21 @@ const Work = () => {
       <div id="works" className=" bg-slate-900 shadow-inner  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
           <Parallax
-            speed={0}
+            speed={10}
             // opacity={innerWidth < 1025 ? null : [2, 0]}
             // scale={ innerWidth < 1025 ? null :[ -1,3]}
           >
             <ScrollAnimationWrapper>
             {/* <div className=" shadow-lg  sm:mt-12 rounded-xl p-8"> */}
+            {/* <Parallax
+            speed={20} className="mt-72"> */}
               <motion.p
                 variants={scrollAnimation4}
                 className="pt-20 pb-8 text-7xl sm:text-3xl lg:text-7xl font-medium text-white leading-relaxed text-left"
               >
                 Have a look at what we do...
               </motion.p>
+              {/* </Parallax> */}
               <motion.p
                 variants={scrollAnimation3}
                 className=" pb-8 text-4xl leading-normal w-10/12 sm:w-10/12 lg:w-5/12 mx-auto my-2 text-right text-white"
@@ -204,26 +209,10 @@ const Work = () => {
           </Parallax>
           <Tab.Panels>
       <Tab.Panel>
-        <div className="shadow-lg bg-gray-200 text-black md:mt-16 sm:mt-0 mb-16 rounded-xl p-8">
-          <h1>GRAPHIC DESIGN | UI/UX</h1>
-          <h2>11111111</h2>
-          <p>kjsannkjsafnjksnfjnsjkfnkjnfnfkankf</p>
-          jdfnjfn
-        </div>
+       <DesignProjects/>
       </Tab.Panel>
       <Tab.Panel>
-      <div className="shadow-lg bg-gray-200 text-black md:mt-16 sm:mt-0 mb-16 rounded-xl p-8" >
-          <h1>SOFTWARE | WEB DEVELOPMENT</h1>
-          <h2>222222222</h2>
-          <Image
-                      src="/assets/devscreen.jpg"
-                      width={innerWidth>1000 ? 1500 : 700}
-                      height={innerWidth>1000 ? 82.5 : 41}
-                      alt="Premium Plan"
-                    />
-          <a target="blank" href="https://www.coffeymaydev.com/">ssss</a>
-  
-        </div>
+    <WebProjects/>
       </Tab.Panel>
 
 {/* {console.log(artSearch)} */}

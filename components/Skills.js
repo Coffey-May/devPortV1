@@ -92,7 +92,7 @@ const Skills = ({
   const scrollAnimation3 = useMemo(() => getScrollAnimation3(), []);
   const scrollAnimation2 = useMemo(() => getScrollAnimation2(), []);
   const { innerWidth } = useWindowSize();
-  // let ax;
+  let ax;
 
   return (
     
@@ -112,7 +112,7 @@ const Skills = ({
                 },
               }}
               className=" sm:pr-0 border-none flex items-center justify-start sm:justify-center py-1   px-1 sm:w-auto mx-auto sm:mx-0 "
-              key={index}
+              key={listUsers}
               custom={{ duration: 0.25 + index / 4 }}
               variants={scrollAnimation2}
             >
@@ -159,15 +159,15 @@ const Skills = ({
   
                 <ul className=" text-white shadow-xd morph p-4 mr-0 lg:mr-20">
                   {features.map((feature, index) => (
-                    <strong>
+                    // <strong>
                       <motion.li
-                    
+                    key={index}
                         opacity={1}
                       
                         className="pb-2 text-sm w-12/12 text-shadow shadow-black hover:text-orange-500"
                         custom={{ duration: 0.025 }}
                  
-                        key={feature}
+                        // key={feature}
                         whileHover={{
                           
                           scale: 1.1,
@@ -178,7 +178,7 @@ const Skills = ({
                       >
                         {feature}
                       </motion.li>
-                    </strong>
+                    // </strong>
                   ))}
                 </ul>
               </div>

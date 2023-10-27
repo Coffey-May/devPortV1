@@ -37,17 +37,17 @@ const Hero = () => {
                 // className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
                 variants={scrollAnimation}
               >
-                <div className="resize  lg:mt-0 xl:mt-20 sm:mt-10 xs:px-1 sm:px-1 md:px-10  z-10 lg:pl-24 md:pl-16 flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-                  <h1 className="nameTitle pb-2 mt-16 sm:pt-0 lg:text-left md:w-full font-extrabold lg:tracking-widest md:tracking-wide sm:text-8xl xs:text-6xl md:text-8xl lg:text-6xl xl:text-7xl   text-white leading-normal ">
+                <div className="resize lg:mt-0 xl:mt-20 sm:mt-10 xs:px-1 sm:px-1 md:px-10  z-10 lg:pl-24 md:pl-16 flex flex-col justify-center items-start row-start-2 sm:row-start-1">
+                  <h1 className=" text-center  nameTitle pb-2 mt-16 sm:pt-0  md:w-full font-extrabold lg:tracking-widest md:tracking-wide sm:text-8xl xs:text-6xl md:text-8xl lg:text-6xl xl:text-7xl   text-white leading-normal ">
                     <strong>COFFEY MAY </strong>
                   </h1>
-                  <h6 className="  tracking-widest PT text-white text-1xl font-light  leading-normal sm:text-4xl xs:text-2xl md:text-4xl lg:tracking-widest md:tracking-wide lg:text-xl xl:text-2xl ">
+                  <h6 className=" mx-auto PT text-white text-1xl font-light  sm:text-4xl xs:text-2xl md:text-4xl  lg:text-xl xl:text-2xl ">
                     {" "}
                     S O F T W A R E &nbsp;|&nbsp; U I / U X &nbsp;|&nbsp; D E S
                     I G N{" "}
                   </h6>
 
-                  <p className="  lg:text-xl  md:text-1xl sm:text-4xl xs:text-4xl  text-white md:mt-4  mb-6 md:tracking-widest sm:tracking-wide ">
+                  <p className="  text-center lg:text-xl  md:text-1xl sm:text-4xl xs:text-4xl  text-white md:mt-4  mb-6 md:tracking-widest sm:tracking-wide ">
                     Progressive full
                     stack web applications and design in react, nodejs, and
                     more...

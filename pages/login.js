@@ -7,14 +7,14 @@ const Login = () => {
 
 if(session){
   return (
-   <div>
+   <div  className="text-white">
     <p>Welcome,{session.user.email}</p>
     <button onClick={()=>signOut()}>Sign out</button>
    </div>
   );
     }else{
       return( 
-         <div>
+         <div className="text-white">
         <p>You are not signed in.</p>
         <button onClick={()=> signIn()}>Sign in</button>
         </div>

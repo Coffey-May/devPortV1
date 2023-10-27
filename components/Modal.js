@@ -10,7 +10,7 @@ const Modal = ({title,image, setShowModal,medium}) => {
     <div  
     className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
   >
-    <div className="absolute w-auto my-0 mx-auto max-w-2xl ">
+    <div className="absolute w-full h-full my-0 mx-auto max-w-2xl ">
       {/*content*/}
       <div className="w-full border-0 rounded-lg shadow-lg relative flex flex-col  bg-black outline-none focus:outline-none">
         {/*header*/}
@@ -30,7 +30,9 @@ const Modal = ({title,image, setShowModal,medium}) => {
           </button>
         </div>
         {/*body*/}
-        <img className={`object-cover max-h-96   ${image.innerHeight> "700px" ? 'max-h-96' : null}`} src={image} alt="" />
+        <img 
+        className={`object-contain max-h-12/12   ${image.innerHeight> "700px" ? 'max-h-12/12' : null}`}
+         src={image} alt="" />
         <div className="relative p-6 flex-auto">
          
           <p className="my-4 text-slate-500 text-lg leading-relaxed">
